@@ -1,0 +1,141 @@
+body {
+	position: relative;
+	background: #e2d1b8;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+.carousel-item {
+    display: none;
+    overflow: hidden;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.main-carousel .carousel-item img {
+	width: auto;
+	max-height: 100vh;
+}
+
+.vision-carousel .carousel-item {
+	width: 100%;
+}
+
+.vision-carousel .carousel-item img {
+	width: 100%;
+	margin: 0 auto;
+}
+
+header {
+	position: relative;
+}
+
+.header-container {
+	position: absolute;
+	top: 0;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-section {
+    width: 960px;
+    flex-grow: 1;
+    margin: 0 auto;
+}
+
+.main-carousel {
+    overflow: hidden;
+}
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.content .btn-cont {
+	width: 33.33%;
+}
+
+.section-container {
+	width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portrait-container {
+	width: 270px;
+	position: relative;
+}
+
+.portrait-container img {
+	width: 100%;
+}
+
+.portrait-overlay {
+	display: none;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    padding: 15px;
+    text-align: center;
+}
+
+.portrait-container {
+	margin: 20px 0;
+}
+
+.portrait-container:hover .portrait-overlay {
+	display: block;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2.title {
+	text-align: center;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+    height: 100%;
+    overflow: scroll;
+    background: rgba(0,0,0,0.8);
+}
+
+.modal-container {
+	background: white;
+	width: 500px;
+    margin: 40px auto;
+    padding: 40px;
+}
+
+.modal.show-modal {
+	display: block;
+}
+
+.lookbook-container {
+	display: flex;
+}
+
+.lookbook-text {
+	width: 25%;
+	padding: 30px;
+}
+
+.lookbook-images {
+	width: 75%;
+}
